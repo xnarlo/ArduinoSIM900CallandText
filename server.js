@@ -57,10 +57,10 @@ app.post('/call', (req, res) => {
   serialPort.write(atCommand, (err) => {
     if (err) {
       console.error('Error making call:', err);
-      return res.send('Error making call');
+      return res.send('<script>alert("Error making call"); window.location.href="/callpage";</script>');
     }
     console.log('Call initiated');
-    res.send('Call initiated');
+    res.send('<script>alert("Call initiated"); window.location.href="/callpage";</script>');
   });
 });
 
@@ -70,10 +70,10 @@ app.post('/drop', (req, res) => {
   serialPort.write(atCommand, (err) => {
     if (err) {
       console.error('Error dropping call:', err);
-      return res.send('Error dropping call');
+      return res.send('<script>alert("Error dropping call"); window.location.href="/callpage";</script>');
     }
     console.log('Call dropped');
-    res.send('Call dropped');
+    res.send('<script>alert("Call dropped"); window.location.href="/callpage";</script>');
   });
 });
 
