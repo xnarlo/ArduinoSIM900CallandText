@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Call Page</title>
+  <title>Make a Call</title>
 </head>
 <body>
-  <h1>Call Page</h1>
-  <form action="/call" method="POST">
-    <label for="number">Number:</label>
-    <input type="text" id="number" name="number" required pattern="\+639[0-9]{9}">
+  <h1>Make a Call</h1>
+  <form action="/call/call" method="post">
+    <label for="number">Phone Number:</label>
+    <input type="text" id="number" name="number" required>
     <br>
-    <button type="submit">CALL</button>
+    <button type="submit">Call</button>
   </form>
-  <form action="/drop" method="POST">
-    <button type="submit">DROP</button>
+  <form action="/call/drop" method="post">
+    <button type="submit">Drop Call</button>
   </form>
 </body>
 </html>

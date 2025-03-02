@@ -7,14 +7,14 @@
 </head>
 <body>
   <h1>Send SMS</h1>
-  <form action="/sendsms" method="POST">
-    <label for="number">Number:</label>
-    <input type="text" id="number" name="number" required pattern="\+639[0-9]{9}">
+  <form action="/sms/sendsms" method="post">
+    <label for="number">Phone Number:</label>
+    <input type="text" id="number" name="number" required>
     <br>
     <label for="message">Message:</label>
     <textarea id="message" name="message" required></textarea>
     <br>
-    <button type="submit">SEND</button>
+    <button type="submit">Send</button>
   </form>
 </body>
 </html>
