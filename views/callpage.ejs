@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Call Page</title>
+</head>
+<body>
+  <h1>Call Page</h1>
+  <form action="/call" method="POST">
+    <label for="number">Number:</label>
+    <input type="text" id="number" name="number" required pattern="\+639[0-9]{9}">
+    <br>
+    <button type="submit">CALL</button>
+  </form>
+  <form action="/drop" method="POST">
+    <button type="submit">DROP</button>
+  </form>
+</body>
+</html>
