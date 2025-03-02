@@ -1,6 +1,12 @@
 const express = require('express');
 const router = express.Router();
+<<<<<<< HEAD
 const { serialPort } = require('../serial');
+=======
+const { SerialPort } = require('serialport');
+
+const serialPort = new SerialPort({ path: 'COM5', baudRate: 9600 });
+>>>>>>> 732ba5e3f7ee132f57616276bb5b40999bc6b4b0
 
 router.get('/sendsmspage', (req, res) => {
   res.render('sendsmspage');
